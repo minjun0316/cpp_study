@@ -15,5 +15,18 @@ int main()
     cin >> a >> b; //입력
     sum = a + b;
     cout << sum; //출력
+// main 함수 밖에서 변수를 선언하고 초기화 하면 전역 변수
+// 함수도 마찬가지
+// main 함수 안에서 변수 선언, 초기화하면 지역 변수
+
+    cout << "\n-------------\n";
+    cout << "enter two integers : ";
+    cin >> a >> b;
+    cout << "sum = " << a + b<<"\n";
+    cout << "(using fuction) sum = " << add(a, b) << "\n";
+    cout << "global variable : " << g;
+
+
     return 0;
 }
+
